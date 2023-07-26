@@ -15,6 +15,7 @@ const search = (event) => {
         setData(response.data)
         console.log(response.data)
       })
+      setLocation('')
   }
 }
 
@@ -31,26 +32,32 @@ const search = (event) => {
       <div className='container'>
         <div className='top'>
           <div className='location'>
-            <p>Dallas</p>
+            <p>{data.name}</p>
           </div>
           <div className='temp'>
-            <h1>40°C</h1>
+            {data.main ? <h1>{data.main.temp}°C</h1> : null}
+            {/* <h1>{data.main.temp}°C</h1> */}
           </div>
           <div className='desc'>
-            <p>Clouds</p>
+            {/* // gettng the data from the API folder location */}
+            {data.weather ? <p>{data.weather[0].main}</p> : null}
+            {/* <p>Clouds</p> */}
           </div>
         </div>
         <div className='bottom'>
           <div className="feels">
-            <p className='bold'>40°C</p>
+            {data.main ? <p className='bold'>{data.main.feels_like}°C </p> : null}
+            {/* <p className='bold'>40°C</p> */}
             <p>Feels Like</p>
           </div>
           <div className="humidity">
-            <p className='bold'>20%</p>
+            {data.main ? <p className='bold'> {data.main.humidity}%</p> : null}
+            {/* <p className='bold'>20%</p> */}
             <p>Humidity</p>
           </div>
           <div className="wind">
-            <p className='bold'>12 MPH</p>
+            {data.wind ? <p className='bold'> {data.wind.speed} MPH</p> : null}
+            {/* <p className='bold'>12 MPH</p> */}
             <p>Wind</p>
           </div>
 
