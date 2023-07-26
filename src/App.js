@@ -4,7 +4,7 @@ function App() {
   // this is the data to connect to the API
   const [data, setData] = useState ({})
   // This is for the location
-  const [location, setLocation] = useState [""]
+  const [location, setLocation] = useState ('')
   const url = 'https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=b1c3290c0706453abdf0a4e989bd6b11'
 
 
@@ -20,6 +20,14 @@ const search = (event) => {
 
   return (
     <div className="app">
+      <div className="search">
+        <input 
+        value={location}
+        onChange={event => setLocation(event.target.value)}
+        onKeyPress={search}
+        placeholder='Enter Location'
+        type="text" />
+      </div>
       <div className='container'>
         <div className='top'>
           <div className='location'>
