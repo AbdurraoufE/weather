@@ -48,6 +48,26 @@ h1{
   z-index: -1;
 }
 
+/* the search button at the top */
+.app .search {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* the input value */
+.app input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 42px;
+  border: 1px solid rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.2);
+}
+
+/* input placeholder */
+
+::placeholder {
+  color: #fff;
+}
 /* container */
 
 .container{
