@@ -44,6 +44,9 @@ const search = (event) => {
             {/* <p>Clouds</p> */}
           </div>
         </div>
+
+      {/* this makes it not show anything if no location is typed */}
+      {data.name != undefined &&
         <div className='bottom'>
           <div className="feels">
             {data.main ? <p className='bold'>{data.main.feels_like}°C </p> : null}
@@ -60,8 +63,9 @@ const search = (event) => {
             {/* <p className='bold'>12 MPH</p> */}
             <p>Wind</p>
           </div>
-
         </div>
+      }
+
       </div>
     </div>
   );
