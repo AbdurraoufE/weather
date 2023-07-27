@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState ({})
   // This is for the location
   const [location, setLocation] = useState ('')
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=b1c3290c0706453abdf0a4e989bd6b11`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=b1c3290c0706453abdf0a4e989bd6b11`
 
 
   // the searching of the cities
