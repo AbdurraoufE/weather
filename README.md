@@ -5,3 +5,6 @@
 ## How To Run:
 Make sure `npm install` is installed
 Then, type: `npm run`
+
+## APIs Used:
+openweathermap API 
