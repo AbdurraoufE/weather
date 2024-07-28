@@ -1,10 +1,9 @@
-# Built with JavaScript, ReactJs, CSS, and and API
-## Future:
-- Host the web-application to the web!
+☀️ https://weatherward.netlify.app ☀️
 
 ## How To Run:
 Make sure `npm install` is installed
 Then, type: `npm run`
 
-## APIs Used:
-openweathermap API 
+# Built with:
+JavaScript, ReactJs, CSS, and and openweathermap API
+
